@@ -16,13 +16,15 @@ timezone:
 
 title: MBlog # the main title
 
-tagline: >-
-  This is a personal homepage and blog.
-  I would post blog focus on Programing, Study and Thoughts here.
-  Welcome to visit.Hope you like it. # it will display as the subtitle
+tagline: |
+  This is a personal homepage and blog.<br>
+  I would post blog focus on Programing, Study and Thoughts here.<br>
+  Welcome to visit.Hope you like it. <br>
+# it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  This is a personal homepage and blog.I would post blog focus on Programing, Study and Thoughts here.
+  This is a personal homepage and blog.
+  I would post blog focus on Programing, Study and Thoughts here.
   Welcome to visit.Hope you like it.
 
 # Fill in the protocol & hostname for your site.
@@ -64,9 +66,9 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-LM0RNGYM8Y # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: nimbus2024 # fill in your GoatCounter ID
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -80,7 +82,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
