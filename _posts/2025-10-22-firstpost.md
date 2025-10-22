@@ -1,5 +1,5 @@
 ---
-title: First Post--Hello,jekyll!
+title: FirstPost--Hello,jekyll!
 date: 2025-10-22 13-59-20 +0800
 categories: [Thoughts]
 tag: [Tech,Try]
