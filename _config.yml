@@ -16,7 +16,10 @@ timezone:
 
 title: MBlog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: >-
+  This is a personal homepage and blog.
+  I would post blog focus on Programing, Study and Thoughts here.
+  Welcome to visit.Hope you like it. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   This is a personal homepage and blog.I would post blog focus on Programing, Study and Thoughts here.
