@@ -40,8 +40,8 @@ social:
   email: jwzmhere@mail.ustc.edu.cn # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/Nimbus2024 # change to your GitHub homepage
+    - https://twitter.com/username # change to your Twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
