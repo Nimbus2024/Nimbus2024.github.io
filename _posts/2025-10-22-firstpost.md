@@ -4,6 +4,7 @@ date: 2025-10-22 13-59-20 +0800
 categories: [Thoughts]
 tag: [Tech,Try]
 description: my first blog posted at my site
+comments: true
 ---
 
 这是我的第一篇博客，用于记录耗时7h学习并搭建此网站的感想。
