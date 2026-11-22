@@ -1,13 +1,16 @@
 # MBlog
 
-Personal blog built with [Hugo](https://gohugo.io/) and the
-[Stack](https://github.com/CaiJimmy/hugo-theme-stack) theme, deployed to
-GitHub Pages.
+Personal blog built with [Hugo](https://gohugo.io/) and
+[chirpy-hugo](https://github.com/cpalau/chirpy-hugo), a Hugo port of the
+Chirpy theme. Deployed to GitHub Pages.
 
 ## Requirements
 
-- Hugo extended 0.170.1 or newer
-- Dart Sass 1.108.2 or newer (`sass` on `PATH`, or set `DART_SASS_BINARY`)
+- Hugo 0.150 or newer (extended recommended)
+- Git (for `enableGitInfo` / last-modified dates)
+
+The theme ships precompiled CSS and vendor assets, so Dart Sass and Node are
+not needed to build the site.
 
 ## Local development
 
@@ -24,12 +27,14 @@ hugo --gc --minify
 ## Content
 
 - Posts: `content/posts/`
-- Pages (about, archives, search): `content/page/`
-- Avatar and processed images: `assets/img/`
-- Static images (including post uploads): `static/images/posts/`
+- About: `content/about.md`
+- Archives: `content/archives.md`
+- Avatar and site images: `static/assets/img/`
+- Post images: `static/assets/img/posts/` (or `static/posts/`)
 
-Post front matter uses Hugo conventions: `title`, `date`, `slug`,
-`categories`, `tags`, `description`, `math`, `comments`, `draft`.
+Post front matter uses Chirpy-compatible fields: `title`, `date`, `slug`,
+`categories`, `tags`, `description`, `math`, `comments`, `pin`,
+`media_subpath`, `draft`.
 
 ## Deployment
 
@@ -45,4 +50,4 @@ uploads.
 ## License
 
 - Site content: CC BY 4.0
-- Theme: Stack, GPL-3.0-only
+- Theme: Chirpy Hugo, MIT

@@ -1,0 +1,27 @@
+[[main]]
+  name = "分类"
+  pageRef = "/categories/"
+  weight = 1
+  [main.params]
+    icon = "fas fa-stream"
+
+[[main]]
+  name = "标签"
+  pageRef = "/tags/"
+  weight = 2
+  [main.params]
+    icon = "fas fa-tags"
+
+[[main]]
+  name = "归档"
+  pageRef = "/archives/"
+  weight = 3
+  [main.params]
+    icon = "fas fa-archive"
+
+[[main]]
+  name = "关于"
+  pageRef = "/about/"
+  weight = 4
+  [main.params]
+    icon = "fas fa-info-circle"

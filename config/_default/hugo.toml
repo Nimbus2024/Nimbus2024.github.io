@@ -1,26 +1,72 @@
 baseURL = "https://nimbus2024.github.io/"
-locale = "zh-CN"
-defaultContentLanguage = "zh-cn"
-hasCJKLanguage = true
 title = "MBlog"
-theme = "hugo-theme-stack"
-enableRobotsTXT = true
-enableGitInfo = true
+locale = "zh-CN"
+defaultContentLanguage = "zh-CN"
+hasCJKLanguage = true
 timeZone = "Asia/Shanghai"
 
+enableRobotsTXT = true
+enableGitInfo = true
+
+theme = "chirpy-hugo"
+
 [pagination]
+  disableAliases = true
   pagerSize = 10
 
 [permalinks]
-  post = "/posts/:slug/"
-  page = "/:slug/"
+  posts = "/posts/:contentbasename/"
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
-[outputFormats.RSS]
+[mediaTypes."application/atom+xml"]
+  suffixes = ["xml"]
+
+[mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
+
+[outputFormats.search]
+  mediaType = "application/json"
+  baseName = "search"
+  path = "assets/js/data"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.feed]
+  mediaType = "application/atom+xml"
   baseName = "feed"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.swconf]
+  mediaType = "text/javascript"
+  baseName = "swconf"
+  path = "assets/js/data"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.manifest]
+  mediaType = "application/manifest+json"
+  baseName = "site"
+  path = "assets/img/favicons"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ["HTML", "feed", "search", "swconf", "manifest"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+  page = ["HTML"]
+
+[[cascade]]
+  [cascade.params]
+    toc = true
+    comments = true
+  [cascade.target]
+    path = "/posts/**"
 
 [security.exec]
-  allow = ['^sass$', '^.*/sass$', '^git$', '^.*/git$']
+  allow = ['^git$', '^.*/git$']

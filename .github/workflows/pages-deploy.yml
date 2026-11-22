@@ -43,19 +43,9 @@ jobs:
           hugo-version: "0.170.1"
           extended: true
 
-      - name: Setup Dart Sass
-        run: |
-          curl -fsSL -o /tmp/dart-sass.tar.gz \
-            https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.tar.gz
-          tar -xzf /tmp/dart-sass.tar.gz -C /tmp
-          sudo mv /tmp/dart-sass /usr/local/dart-sass
-          sudo ln -sf /usr/local/dart-sass/sass /usr/local/bin/sass
-          sass --version
-
       - name: Build site
         env:
           HUGO_ENVIRONMENT: "production"
-          DART_SASS_BINARY: "/usr/local/bin/sass"
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload site artifact

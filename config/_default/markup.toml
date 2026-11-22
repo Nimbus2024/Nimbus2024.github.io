@@ -1,24 +1,20 @@
-[goldmark]
-  [goldmark.extensions.passthrough]
-    enable = true
+[markup.goldmark.renderer]
+  unsafe = true
 
-    [goldmark.extensions.passthrough.delimiters]
-      block = [["\\[", "\\]"], ["$$", "$$"]]
-      inline = [["$", "$"], ["\\(", "\\)"]]
+[markup.goldmark.parser.attribute]
+  block = true
 
-  [goldmark.renderer]
-    unsafe = true
-
-[tableOfContents]
-  endLevel = 4
-  ordered = true
-  startLevel = 2
-
-[highlight]
+[markup.highlight]
   noClasses = false
-  codeFences = true
-  guessSyntax = true
-  lineNoStart = 1
-  lineNos = true
-  lineNumbersInTable = true
-  tabWidth = 4
+  lineNos = false
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[markup.goldmark.extensions.passthrough]
+  enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+  block = [["$$", "$$"]]
+  inline = [["$", "$"]]
