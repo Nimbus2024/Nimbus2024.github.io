@@ -39,7 +39,8 @@ Post front matter uses Chirpy-compatible fields: `title`, `date`, `slug`,
 ## Deployment
 
 Push to `main`; `.github/workflows/pages-deploy.yml` builds the site with
-Hugo and deploys `public/` to GitHub Pages.
+Hugo and deploys `public/` to GitHub Pages. Pull requests run
+`.github/workflows/ci.yml`, which builds the site but does not deploy.
 
 ## Writing from a browser (Pages CMS)
 
@@ -66,8 +67,8 @@ Notes:
 
 ## Dependency updates
 
-`.github/dependabot.yml` checks GitHub Actions and the theme submodule weekly.
-Review and merge those pull requests manually.
+`.github/dependabot.yml` checks GitHub Actions weekly and the theme submodule
+monthly. Review and merge those pull requests manually.
 
 ## License
 
