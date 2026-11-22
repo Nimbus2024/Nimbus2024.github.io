@@ -4,7 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
-Hi, I'm Wuziming Jiang, majoring in AI at University of Sci&Tech of China.
+你好，我是 Wuziming Jiang，就读于中国科学技术大学人工智能专业。这里记录我的编程、学习笔记和一些思考。

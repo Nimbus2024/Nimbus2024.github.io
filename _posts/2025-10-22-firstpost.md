@@ -1,6 +1,6 @@
 ---
 title: FirstPost--Hello,jekyll!
-date: 2025-10-22 13-59-20 +0800
+date: 2025-10-22 13:59:20 +0800
 categories: [Thoughts]
 tag: [Tech,Try]
 description: my first blog posted at my site
@@ -15,17 +15,17 @@ comments: true
 
 言归正传，本文将分叙建站笔记与学习心得两部分内容。  
 
-# 如何建立一个你的博客
+## 如何建立一个你的博客
 
 建立博客需要一个可供访问的服务器，让服务器响应访问的后端代码，以及美化页面的前端代码。
 这个整体的前半部分，`github`提供了足够好的托管服务，以至于你只需要完成最后一步-前端代码。
 
-# 如何使用github提供的托管服务
+## 如何使用github提供的托管服务
 
 这个服务~~暂时~~向每位用户提供一次，具体地，每个用户可以在名下创建一个名为`username.github.io`的仓库，在该仓库的`setting->page`选项卡中选择`public`后，仓库就被作为主文件夹上传到服务器中，所有人可以通过`https://username.github.io`
 来访问。
 
-# 如何添加前端代码
+## 如何添加前端代码
 
 这个部分我还没有完全了解其原理，但借助ai，我使用了成熟的一套jekyll框架。只需要将该框架作为template打开，仓库改名为`username.github.io`就OK了。
 待我了解了完整原理后，再完成这一部分。
