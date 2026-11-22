@@ -1,11 +1,13 @@
 ---
 title: 概率论笔记1
-date: 2025-12-20 09:20:48 +0800
+date: 2025-12-20T09:20:48+08:00
 categories: [notes]
-tag: [study]
+tags: [study]
 description: 连续型随机变量的联合分布，与随机变量的函数的分布
+slug: probability_theory_note
 math: true
 comments: true
+draft: false
 ---
 这个部分是概率论的关键基础，让我们可以借助运算从经典个体推广到广泛的分布情形。在我的视角中同样也是困扰了我很久的问题——课本安排实在是有点太错落了。今天刚好详细整理它。
 首先，问题是从`随机变量的函数`（这显然也是个随机变量）的分布开始的。

@@ -1,0 +1,56 @@
+description = "Wuziming Jiang 的个人主页与博客，记录编程、学习笔记与思考。"
+tagline = "个人主页与博客，记录编程、学习与思考。"
+author = "Wuziming Jiang"
+theme_mode = ""
+toc = true
+
+github_username = "Nimbus2024"
+
+avatar = "/assets/img/avatar.jpg"
+social_preview_image = "/assets/img/avatar.jpg"
+
+[footer]
+  copyright = ""
+
+[social]
+  name = "Wuziming Jiang"
+  email = "jwzmhere@mail.ustc.edu.cn"
+  links = ["https://github.com/Nimbus2024"]
+
+[webmaster_verifications]
+  google = "hWkoknLZCdttUtm5YPW9YrGC-v3mxgRyRC0Ga4yJCR0"
+
+[analytics.google]
+  id = ""
+
+[analytics.goatcounter]
+  id = "nimbus2024"
+
+[pageviews]
+  provider = "goatcounter"
+
+[comments]
+  provider = "giscus"
+
+[comments.giscus]
+  repo = "Nimbus2024/Nimbus2024.github.io"
+  repo_id = "R_kgDOQGwt8A"
+  category = "Comments"
+  category_id = "DIC_kwDOQGwt8M4DLt5V"
+  mapping = "pathname"
+  strict = "0"
+  input_position = "bottom"
+  lang = "zh-CN"
+  reactions_enabled = "1"
+
+[assets]
+  dayjs_locale = "/assets/lib/dayjs/locale/zh.js"
+
+[assets.self_host]
+  enabled = true
+
+[pwa]
+  enabled = false
+
+[pwa.cache]
+  enabled = false

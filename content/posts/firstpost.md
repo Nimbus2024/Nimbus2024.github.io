@@ -1,10 +1,12 @@
 ---
-title: FirstPost--Hello,jekyll!
-date: 2025-10-22 13:59:20 +0800
+title: "FirstPost--Hello,jekyll!"
+date: 2025-10-22T13:59:20+08:00
 categories: [Thoughts]
-tag: [Tech,Try]
+tags: [Tech, Try]
 description: my first blog posted at my site
+slug: firstpost
 comments: true
+draft: false
 ---
 
 这是我的第一篇博客，用于记录耗时7h学习并搭建此网站的感想。
