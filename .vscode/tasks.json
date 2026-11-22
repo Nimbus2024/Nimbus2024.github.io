@@ -2,25 +2,25 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Jekyll Server",
+      "label": "Hugo Server",
       "type": "shell",
-      "command": "./tools/run.sh",
+      "command": "hugo server -D",
       "group": {
         "kind": "build",
         "isDefault": true
       },
       "problemMatcher": [],
-      "detail": "Runs the Jekyll server with live reload."
+      "detail": "Run the Hugo dev server with drafts."
     },
     {
-      "label": "Build Jekyll Site",
+      "label": "Hugo Build",
       "type": "shell",
-      "command": "./tools/test.sh",
+      "command": "hugo --gc --minify",
       "group": {
         "kind": "build"
       },
       "problemMatcher": [],
-      "detail": "Build the Jekyll site for production."
+      "detail": "Build the production site into public/."
     }
   ]
 }

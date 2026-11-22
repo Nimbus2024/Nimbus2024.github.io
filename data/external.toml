@@ -1,0 +1,19 @@
+KaTeX = [
+    { src = "/vendor/katex/katex.min.css", type = "style" },
+    { src = "/vendor/katex/katex.min.js", type = "script", defer = true },
+    { src = "/vendor/katex/auto-render.min.js", type = "script", defer = true },
+]
+
+Cactus = [
+    { src = "https://latest.cactus.chat/cactus.js", type = "script" },
+    { src = "https://latest.cactus.chat/style.css", type = "style" },
+]
+
+[PhotoSwipe]
+    Style    = "/vendor/photoswipe/photoswipe.css"
+    Core     = "/vendor/photoswipe/photoswipe.esm.min.js"
+    Lightbox = "/vendor/photoswipe/photoswipe-lightbox.esm.min.js"
+
+[Artalk]
+    Style  = "https://cdn.jsdelivr.net/npm/artalk@2.9.1/dist/Artalk.css"
+    Script = "https://cdn.jsdelivr.net/npm/artalk@2.9.1/+esm"

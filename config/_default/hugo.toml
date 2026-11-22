@@ -1,0 +1,26 @@
+baseURL = "https://nimbus2024.github.io/"
+locale = "zh-CN"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+title = "MBlog"
+theme = "hugo-theme-stack"
+enableRobotsTXT = true
+enableGitInfo = true
+timeZone = "Asia/Shanghai"
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  post = "/posts/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputFormats.RSS]
+  baseName = "feed"
+
+[security.exec]
+  allow = ['^sass$', '^.*/sass$', '^git$', '^.*/git$']

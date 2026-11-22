@@ -1,0 +1,62 @@
+mainSections = ["posts"]
+rssFullContent = true
+favicon = "img/avatar.jpg"
+
+[footer]
+  since = 2025
+  customText = "保留部分权利。"
+
+[dateFormat]
+  published = "2006-01-02"
+  lastUpdated = "2006-01-02 15:04"
+
+[sidebar]
+  compact = false
+  emoji = ""
+  subtitle = "个人主页与博客，记录编程、学习与思考。"
+  avatar = "img/avatar.jpg"
+
+[article]
+  headingAnchor = true
+  math = false
+  toc = true
+  readingTime = true
+
+  [article.license]
+    enabled = true
+    default = "本文由作者按照 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 进行授权"
+
+[widgets]
+  homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "categories", params = { limit = 10 } },
+    { type = "tag-cloud", params = { limit = 10 } },
+  ]
+  page = [{ type = "toc" }]
+
+[opengraph.twitter]
+  card = "summary_large_image"
+
+[colorScheme]
+  toggle = true
+  default = "auto"
+
+[comments]
+  enabled = true
+  provider = "giscus"
+
+  [comments.giscus]
+    repo = "Nimbus2024/Nimbus2024.github.io"
+    repoID = "R_kgDOQGwt8A"
+    category = "Comments"
+    categoryID = "DIC_kwDOQGwt8M4DLt5V"
+    mapping = "pathname"
+    lightTheme = "light"
+    darkTheme = "dark_dimmed"
+    reactionsEnabled = 1
+    emitMetadata = 0
+    inputPosition = "bottom"
+    lang = "zh-CN"
+    strict = 0
+    loading = "lazy"
