@@ -41,11 +41,31 @@ Post front matter uses Chirpy-compatible fields: `title`, `date`, `slug`,
 Push to `main`; `.github/workflows/pages-deploy.yml` builds the site with
 Hugo and deploys `public/` to GitHub Pages.
 
-## Writing from a browser
+## Writing from a browser (Pages CMS)
 
-The repository is compatible with GitHub's web editor and GitHub Pages CMS.
-A `.pages.yml` file can be added to enable a browser-based editor with media
-uploads.
+This repository includes `.pages.yml` for [Pages CMS](https://pagescms.org/).
+It edits `content/posts/`, `content/about.md`, and `content/archives.md`
+directly in the GitHub repository and uploads images to
+`static/assets/img/posts/`.
+
+1. Open <https://app.pagescms.org> and sign in with GitHub.
+2. Install the Pages CMS GitHub App on this repository only.
+3. Open the repository in Pages CMS and start writing.
+4. Saving creates a commit; GitHub Actions rebuilds and deploys the site.
+
+Notes:
+
+- `slug` becomes the filename (`content/posts/<slug>.md`) and therefore the
+  URL (`/posts/<slug>/`). Avoid changing it after publishing.
+- `draft: true` keeps a post out of the build until you turn it off.
+- Use the rich-text Source mode for complex Markdown or LaTeX.
+- Compress images and strip EXIF/GPS metadata before uploading; Pages CMS
+  uploads the original file.
+
+## Dependency updates
+
+`.github/dependabot.yml` checks GitHub Actions and the theme submodule weekly.
+Review and merge those pull requests manually.
 
 ## License
 
