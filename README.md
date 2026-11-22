@@ -59,6 +59,8 @@ Notes:
   URL (`/posts/<slug>/`). Avoid changing it after publishing.
 - `draft: true` keeps a post out of the build until you turn it off.
 - Use the rich-text Source mode for complex Markdown or LaTeX.
+- Pages CMS writes dates with a fixed `+08:00` offset. A post dated in the
+  future is excluded by Hugo until that time and the next build.
 - Compress images and strip EXIF/GPS metadata before uploading; Pages CMS
   uploads the original file.
 
